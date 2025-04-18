@@ -59,17 +59,17 @@ class LinkedList<T> {
     dummy.next = this.head;
     let current = dummy.next;
 
-    let i = index - 1;
+    let i = index - 1
 
     while (i > 0) {
       if (current.next) {
         current = current.next;
       }
-      i -= 1;
+      i -= 1
     }
     if (current.next?.next) {
       current.next = current.next.next;
-    }
+    } 
   }
   printNode(): string {
     let current = this.head;
